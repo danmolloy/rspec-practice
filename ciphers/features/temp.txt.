@@ -1,0 +1,24 @@
+
+  Scenario: large positive key
+    Given a cipher program
+    When I input the string "1230-Beware the GREEN Monkey!!'#';;'[[££"$"
+    And I input the key "38"
+    Then I should recieve "1230-Nqimdq ftq SDQQZ Yazwqk!!'#';;'[[££"$"
+
+  Scenario: small negative key
+    Given a cipher program
+    When I input the string "1230-Beware the GREEN Monkey!!'#';;'[[££"$"
+    And I input the key "-7"
+    Then I should recieve "1230-Uxptkx max ZKXXG Fhgdxr!!'#';;'[[££"$"
+
+  Scenario: large negative key
+    Given a cipher program
+    When I input the string "1230-Beware the GREEN Monkey!!'#';;'[[££"$"
+    And I input the key "-47"
+    Then I should recieve "1230-Gjbfwj ymj LWJJS Rtspjd!!'#';;'[[££"$"
+
+  Scenario: key of 26
+    Given a cipher program
+    When I input the string "1230-Beware the GREEN Monkey!!'#';;'[[££"$"
+    And I input the key "26"
+    Then I should recieve "1230-Beware the GREEN Monkey!!'#';;'[[££"$"
