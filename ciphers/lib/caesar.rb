@@ -1,7 +1,9 @@
-class CaesarCipher
-  def initialize(string, key, output)
-  end
+module Ciphers
+  class CaesarCipher
+    def initialize(string, key, output)
+    end
 
-  def start
+    def start
+    end
   end
 end
